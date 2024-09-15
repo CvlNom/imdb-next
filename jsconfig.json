@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",  // ES2015 대신 ESNext로 설정하면 최신 ES6+ 모듈 기능을 사용할 수 있음
+    "baseUrl": ".",      // 기본적으로 경로 설정의 기준이 되는 디렉토리 (프로젝트 루트)
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]  // "./src/*"에서 "./"는 생략 가능
     }
-  }
+  },
+  "exclude": ["node_modules"]  // node_modules는 보통 컴파일에서 제외
 }
