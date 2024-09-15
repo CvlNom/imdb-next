@@ -9,7 +9,7 @@ export default async function MoviePage({ params }) {
   //   console.log(movie)
 
   return <div className="w-full">
-    <div className="p-4 md:pt-8 flex flex-col md:flex-row content-center mac-w-6xl mx-auto md:space-x-6">
+    <div className="p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6">
       <Image
         src={`https://image.tmdb.org/t/p/original/${
           movie.backdrop_path || movie.poster_path
